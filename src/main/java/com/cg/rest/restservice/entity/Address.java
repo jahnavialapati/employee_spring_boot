@@ -6,7 +6,7 @@ import javax.persistence.Embeddable;
 public class Address {
 	private String street;
 	private String cityName;
-	private int pincode;
+	private Integer pincode;
 	private String flatNo;
 	public String getStreet() {
 		return street;
@@ -20,10 +20,11 @@ public class Address {
 	public void setCityName(String cityName) {
 		this.cityName = cityName;
 	}
-	public int getPincode() {
+	
+	public Integer getPincode() {
 		return pincode;
 	}
-	public void setPincode(int pincode) {
+	public void setPincode(Integer pincode) {
 		this.pincode = pincode;
 	}
 	public String getFlatNo() {
@@ -40,6 +41,13 @@ public class Address {
 	public Address() {
 		super();
 		// TODO Auto-generated constructor stub
+	}
+	public Address(String street, String cityName, Integer pincode, String flatNo) {
+		super();
+		this.street = street;
+		this.cityName = cityName;
+		this.pincode = pincode;
+		this.flatNo = flatNo;
 	}
 	
 }
